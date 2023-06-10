@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import TwoWayBinding from './Components/TwoWayBinding';
+import ReactLists from './Components/ReactLists';
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
   {
     path: "/two-way-binding",
     element: <TwoWayBinding />
-  }
+  },
+  {
+    path: "/react-lists",
+    element: <ReactLists />
+  },
 ]);
 
 class App extends Component {
